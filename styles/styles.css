@@ -1,8 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --border-color: black;
     --image-width: 150px;
     --border-size: 1px;
     --padding: 2px;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Grenze Gotisch', Arial, san-serif;
 }
 
 nav {
@@ -42,15 +53,25 @@ main img {
     border: var(--border-size) solid var(--border-color);
     padding: var(--padding);
     box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+
+p {
+    margin: 1rem;
 }
 
 aside {
     width: 500px;
     margin: 10px 20px;
-    border: var(--border-size) solid var(--border-color);
-    padding: var(--padding) 10px;
-    background-color: #568203;
-    color: antiquewhite;
+    position: relative;
+}
+
+aside h2 {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    color: black;
 }
 
 aside img {
@@ -62,4 +83,17 @@ footer {
     margin-top: 15px;
     border-top: var(--border-size) solid grey;
     text-align: center;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1res;
+    border: var(--border-size) solid var(--border-color);
+    padding: var(--padding) 10px;
+    background-color: #eee;
+    color: #000;
+}
+
+.indent {
+    padding-left: 2rem;
 }
