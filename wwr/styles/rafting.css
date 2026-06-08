@@ -118,6 +118,17 @@ iframe {
     height: 300px;
 }
 
+form {
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+
+legend {
+    grid-row: span 3;
+    align-self: center;
+
+}
+
 /* Classes */
 
 .hero {
@@ -238,4 +249,12 @@ iframe {
 .employees figcaption {
     text-align: center;
     margin-top: 10px;
+}
+
+.spanner {
+    grid-column: span 2;
+}
+
+.spanner textarea {
+    width: 100%;
 }
