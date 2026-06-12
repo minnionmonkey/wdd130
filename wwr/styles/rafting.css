@@ -121,19 +121,90 @@ iframe {
 form {
     display: grid;
     grid-template-columns: 30% auto;
+    margin: 5px;
+    padding: 1rem;
+}
+
+form h2 {
+    color: var(--accent1-color);
+    grid-column: span 2;
 }
 
 /* Classes */
 
-.hero {
-    position: relative;
+.action {
+    grid-row: span 3;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
-.hero img {
-    display: block;
-    width: 100%;
+.action h2 {
+    color: var(--accent2-color);
+    align-self: center;
+}
+
+.action img {
+    border: none;
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+}
+
+.adventure figcaption {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.adventure h2 {
+    grid-column: span 5;
+    margin: 5px 0 10px;
+}
+
+.adventure img {
+    width: 125px;
     height: auto;
-    border: 1px solid var(--accent1-color);
+    display: flex;
+    justify-self: center;
+    margin: 2px;
+}
+
+.employees {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+}
+
+.employees h2 {
+    grid-column: span 5;
+    margin: 5px 0 10px;
+}
+
+.employees img {
+    width: 125px;
+    height: auto;
+    display: flex;
+    justify-self: center;
+    margin: 2px;
+}
+
+.employees figcaption {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.front {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+}
+
+.front form {
+    grid-column: span 2;
+}
+
+.hero {
+    position: relative;
 }
 
 .hero article {
@@ -153,48 +224,17 @@ form {
     margin: 3px;
 }
 
-.socialmedia {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.socialmedia a {
-    text-decoration: none;
-}
-
-.socialmedia img {
-    width: 50px;
+.hero img {
+    display: block;
+    width: 100%;
     height: auto;
-    margin: 0 2px;
+    border: 1px solid var(--accent1-color);
 }
 
 .history {
     display: flex;
     justify-self: center;
     align-self: center;
-}
-
-.adventure {
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
-}
-
-.adventure h2 {
-    grid-column: span 5;
-    margin: 5px 0 10px;
-}
-
-.adventure img {
-    width: 125px;
-    height: auto;
-    display: flex;
-    justify-self: center;
-    margin: 2px;
-}
-
-.adventure figcaption {
-    text-align: center;
-    margin-top: 10px;
 }
 
 .information {
@@ -222,32 +262,40 @@ form {
     grid-column: span 2;
 }
 
-.employees {
-    display: grid;
-    grid-template-columns: repeat(3, 33%);
-}
-
-.employees h2 {
-    grid-column: span 5;
-    margin: 5px 0 10px;
-}
-
-.employees img {
-    width: 125px;
-    height: auto;
-    display: flex;
-    justify-self: center;
-    margin: 2px;
-}
-
-.employees figcaption {
-    text-align: center;
-    margin-top: 10px;
-}
-
 .multi {
     grid-row: span 3;
     align-self: center;
+}
+
+.offering {
+    grid-column: span 2;
+    grid-row: span 3;
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+.offering img {
+    grid-column: 1;
+    justify-self: center;
+}
+
+.offering p {
+    grid-row: span 2;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 50px;
+    height: auto;
+    margin: 0 2px;
 }
 
 .spanner {
