@@ -130,6 +130,29 @@ form h2 {
     grid-column: span 2;
 }
 
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    letter-spacing: 1px;
+}
+
+th,
+td {
+    border: 1px solid rgb(140, 140, 140);
+    padding: 8px 12px;
+    text-align: center;
+}
+
+thead tr {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+}
+
+tr {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+}
+
 /* Classes */
 
 .action {
@@ -304,4 +327,45 @@ form h2 {
 
 .spanner textarea {
     width: 100%;
+}
+
+.trips {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.trips .action {
+    grid-row: span 2;
+}
+
+.trip {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    justify-items: center;
+}
+
+.trip img {
+    width: 98%;
+    height: auto;
+}
+
+.trip2 {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    justify-items: center;
+}
+
+.trip2 img {
+    width: 200px;
+    height: auto;
+}
+
+.tables {
+    grid-column: span 2;
+    display: flex;
+    align-self: center;
+    justify-self: center;
 }
